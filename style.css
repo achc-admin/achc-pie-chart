@@ -1,0 +1,154 @@
+/* EDUCATION WHEEL  */
+#education-wheel {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+.inner-outside-wheel,
+.outer-center-wheel {
+    position: absolute;
+}
+.inner-line-wheel { transform: translate(0px, 3.5rem);}
+.outer-center-wheel {transform: translate(0, 13.5rem); }
+.inner-outside-wheel img:nth-child(1) {transform: translate(-5.5rem, 27rem);}
+.inner-outside-wheel img:nth-child(3) {transform: translate(5rem, 27.5rem);}
+.middle-wheel {
+    position: relative;
+}
+.middle-wheel .image img {
+    width: auto !important;
+    max-width: initial;
+}
+.wheel-text {
+    opacity: .3;
+    transition: .3s ease-in;
+    font-size: 13px;
+    line-height: 1.6;
+}
+.image-1 > .wheel-text,
+.image-2 > .wheel-text,
+.image-3 > .wheel-text,
+.image-4 > .wheel-text,
+.image-5 > .wheel-text {
+    width: 90%;
+    position: absolute;
+}
+.image-1 > .wheel-text {
+    transform: translate(-13rem, -3rem);
+}
+.image-2 > .wheel-text {
+     transform: translate(18rem, 0);
+}
+.image-3 .wheel-text {
+    transform: translate(19rem, 11rem);
+}
+.image-4 .wheel-text {
+    transform: translate(0rem, 16rem);
+    text-align: center;
+}
+.image-5 .wheel-text {
+    transform: translate(-15rem, 9rem);
+}
+.image:hover .wheel-text {
+    opacity: 1;
+}
+.image-1, .image-2, .image-3, .image-4, .image-5 {
+    position: absolute;
+    cursor: pointer;
+}
+.image-1 {transform: translate(-32rem,5.5rem);}
+.image-2 {transform: translate(-17.5rem, 5.4rem);}
+.image-3 {transform: translate(-13.9rem, 15.9rem);}
+.image-4 {transform:translate(-26.4rem, 25.7rem);}
+.image-5 {transform: translate(-36.4rem,16.1rem);}
+.image-1:hover img, .image-2:hover img, .image-3:hover img,
+.image-4:hover img, .image-5:hover img { transition:.4s ease-in;}
+.image-1:hover img {transform: scale(1.04);}
+.image-2:hover img {transform: scale(1.04);}
+.image-3:hover img {transform: scale(1.04);}
+.image-4:hover img {transform: scale(1.04);}
+.image-5:hover img {transform: scale(1.04);}
+.image-1 p::after,
+.image-2 p::after,
+.image-3 p::after,
+.image-4 p::after,
+.image-5 p::after {
+    content: "";
+    display: block;
+    background: #73a4c1;
+    position: absolute;
+}
+.image-1 p::after {
+    width: 30%;
+    height: 5px;
+    transform: rotate3d(1, 1, 1, 50deg);
+    left: 100%;
+}
+
+.image-2 p::after {
+    width: 40%;
+    height: 5px;
+    transform: rotate3d(1, 1, 1, 300deg);
+    right: 106%;
+}
+.image-3 p::after {
+    width: 45%;
+    height: 5px;
+    transform: rotate3d(1, 1, 1, 25deg);
+    right: 115%;
+    top: 0;
+}
+.image-4 p::after {
+    width: 5px;
+    height: 100%;
+    right: 50%;
+		top: -4.2em;
+}
+.image-5 p::after {
+    width: 24%;
+    height: 5px;
+    transform: rotate3d(1, 1, 1, 329deg);
+    left: 88%;
+    top: 0%;
+}
+.image-1 p::before,
+.image-2 p::before,
+.image-3 p::before,
+.image-4 p::before,
+.image-5 p::before{
+		content: "";
+		display: block;
+		width: 15px;
+		height: 15px;
+		border-radius: 50%;
+		background: #73a4c1;
+		transform: rotate3d(1, 1, 1, 25deg);
+		position: absolute;
+}
+.image-1 p::before {
+    left: 100%;
+    top: 39px;
+}
+.image-2 p::before {
+    right: 111%;
+    top: 24px;
+}
+ .image-3 p::before {
+    right: 113%;
+    top: 5px;
+}
+.image-4 p::before {
+    top: -20px;
+    left: 46.2%;
+}
+ .image-5 p::before {
+    left: 87%;
+    top: 2px;
+}
+@keyframes lineHover {
+  from {width: 0%;}
+  to {width:100%;}
+}
+/* EDUCATION WHEEL  */
